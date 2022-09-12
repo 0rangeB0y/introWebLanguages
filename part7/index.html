@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html>
+  <head>
+    
+
+  </head>
+  <body>
+    <!--inputs textbox with prompt to enter name-->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+        <button id="my-button">Click Me</button> <!--creates button with text 'click me'-->
+
+        <script> //assigns variable to appropriate actions
+        var myButton = document.querySelector('#my-button');
+        var nameInput = document.querySelector('#name-input');
+
+        myButton.addEventListener('click', function () { //sets what happens when button is clicked
+            if (nameInput.value !== '') {
+            alert('Hello ' + nameInput.value); //alert brings up a pop up window that says hello plus the name that was inputed
+            }
+        });
+        </script>
+
+
+  </body>
+</html>
